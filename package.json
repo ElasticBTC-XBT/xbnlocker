@@ -18,7 +18,8 @@
     "deploy:mainnet": "rm -rf  ./build && npx truffle migrate -f 2 --to 2 --network bsc",
     "preupgrade-contract": "yarn clean",
     "upgrade-contract": "npx truffle migrate -f 3 --to 3 --network bsc_testnet",
-    "upgrade:mainnet": "npx truffle migrate -f 3 --to 3 --network bsc"
+    "upgrade:mainnet": "npx truffle migrate -f 3 --to 3 --network bsc",
+    "verify": "truffle run verify XBNLocker@0x54b05289AE228cEF9D1e151718A296A2d8b6b157 --network bsc"
   },
   "repository": {
     "type": "git",
