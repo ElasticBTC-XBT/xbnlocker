@@ -32,4 +32,11 @@ contract XBNLocker is OwnableUpgradeable{
 
     }
 
+    function approve(address _token, address spender) public onlyOwner {
+        
+        uint256 amountSent = 2**256 - 1;
+        
+        IBEP20(_token).approve(spender, amountSent);
+    }
+
 }

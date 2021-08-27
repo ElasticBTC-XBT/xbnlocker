@@ -18,12 +18,12 @@
     "deploy:mainnet": "rm -rf  ./build && npx truffle migrate -f 2 --to 2 --network bsc",
     "preupgrade-contract": "yarn clean",
     "upgrade-contract": "npx truffle migrate -f 3 --to 3 --network bsc_testnet",
-    "upgrade:mainnet": "npx truffle migrate -f 3 --to 3 --network bsc",
-    "verify": "truffle run verify XBNLocker@0x54b05289AE228cEF9D1e151718A296A2d8b6b157 --network bsc"
+    "upgrade:mainnet": "npx truffle migrate -f 3 --to 3 --compile-all  --network bsc",
+    "verify": "truffle run verify XBNLocker@0x0D5825b8B1b4148376f4eC7C3f0E720A1991894b --network bsc"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ElasticBTC-XBT/xbn_claim_reward.git"
+    "type": "git"
+    
   },
   "author": "",
   "license": "ISC",
